@@ -1,19 +1,15 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
+@media (min-width: $break-lg) {
 
 .container {
   max-width: 1400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
 }
 
 .centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
 }
 
 .row {
@@ -30,64 +26,38 @@
 [class^=col] + [class^=col] {
   margin-left: 10px;
 }
-
-.col-1 {
-  flex-basis: 8.33%;
-}
-
-.col-2 {
-  flex-basis: 16.67%;
-}
-
-.col-3 {
-  flex-basis: 25.00%;
-}
-
-.col-4 {
-  flex-basis: 33.33%;
-}
-
-.col-5 {
-  flex-basis: 41.67%;
-}
-
-.col-6 {
-  flex-basis: 50.00%;
-}
-
-.col-7 {
-  flex-basis: 58.33%;
-}
-
-.col-8 {
-  flex-basis: 66.67%;
-}
-
-.col-9 {
-  flex-basis: 75.00%
-}
-
-.col-10 {
-  flex-basis: 83.33%;
-}
-
-.col-11 {
-  flex-basis: 91.67%;
-}
-
-.col-12 {
-  flex-basis: 100%;
+    
+    
+$cols: (
+    col-1: 8.33%,
+    col-2: 16.67%,
+    col-3: 25.00%,
+    col-4: 33.33%,
+    col-5: 41.67%,
+    col-6: 50.00%,
+    col-7: 58.33%,
+    col-8: 66.67%,
+    col-9: 75.00%,
+    col-10: 83.33%,
+    col-11: 91.67%,
+    col-12: 100%,
+);
+    
+@each $col, $per in $cols {
+    .#{$col} {
+        flex-basis: $per;
+    }
 }
 
 .nav {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+    &-link {
+        flex-basis: 100px;
+    }
 }
 
-.nav-link {
-  flex-basis: 100px;
-}
 
 .btn {
   padding: 10px 30px;

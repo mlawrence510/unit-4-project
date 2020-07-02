@@ -385,7 +385,7 @@ template {
 /* ============================================= */
 /* line 6, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #777;
   box-sizing: border-box;
 }
@@ -403,25 +403,25 @@ a {
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
-/* line 25, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
+/* line 27, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
 .headline-primary {
   color: #58e1c1;
   margin-left: 10px;
 }
 
-/* line 30, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
+/* line 32, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
 .headline-secondary {
   font-weight: 300;
   color: #777;
 }
 
-/* line 35, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
+/* line 37, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
 .link {
   color: #51ddfc;
   font-weight: 700;
 }
 
-/* line 40, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
+/* line 42, ../../Portfolio/unit-4-project/unit-4-project/scss/base/_typography.scss */
 .blockquote {
   font-size: 1.5em;
   font-weight: 300;
@@ -449,29 +449,54 @@ a {
   border-radius: 5px;
 }
 
-/* line 15, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+/* line 24, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
 .default {
   background-color: #51ddfc;
 }
 
-/* line 19, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+/* line 26, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+.default:hover {
+  background-color: #83e7fd;
+}
+
+/* line 24, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
 .error {
   background-color: #e4757a;
 }
 
-/* line 23, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+/* line 26, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+.error:hover {
+  background-color: #eca0a3;
+}
+
+/* line 24, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
 .info {
   background-color: #927bc1;
 }
 
-/* line 27, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+/* line 26, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+.info:hover {
+  background-color: #af9ed1;
+}
+
+/* line 24, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
 .success {
   background-color: #63cc82;
 }
 
-/* line 31, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+/* line 26, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+.success:hover {
+  background-color: #89d9a1;
+}
+
+/* line 24, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
 .warning {
   background-color: #fd7856;
+}
+
+/* line 26, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_buttons.scss */
+.warning:hover {
+  background-color: #fea088;
 }
 
 /* ============================================= */
@@ -513,7 +538,7 @@ a {
   flex-direction: column;
 }
 
-/* line 12, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_navigation.scss */
+/* line 11, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_navigation.scss */
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -523,7 +548,7 @@ a {
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-/* line 23, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_navigation.scss */
+/* line 21, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_navigation.scss */
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -533,31 +558,25 @@ a {
 /*              Images                           */
 /* ============================================= */
 /* line 5, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_images.scss */
-.img-avatar {
+.img-avatar, .img-frame, .img-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 10, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_images.scss */
+.img-avatar {
   margin-top: 10px;
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 14, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_images.scss */
+/* line 17, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_images.scss */
 .img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
   max-width: 100%;
   padding: 13px;
   border: 1px solid #ccc;
-}
-
-/* line 24, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_images.scss */
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ============================================= */
@@ -660,94 +679,94 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 13, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 11, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 19, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 15, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .row {
     flex-direction: row;
   }
-  /* line 23, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 19, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center;
   }
-  /* line 30, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 26, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-  /* line 34, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-1 {
     flex-basis: 8.33%;
   }
-  /* line 38, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-2 {
     flex-basis: 16.67%;
   }
-  /* line 42, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-3 {
-    flex-basis: 25.00%;
+    flex-basis: 25%;
   }
-  /* line 46, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-4 {
     flex-basis: 33.33%;
   }
-  /* line 50, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-5 {
     flex-basis: 41.67%;
   }
-  /* line 54, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-6 {
-    flex-basis: 50.00%;
+    flex-basis: 50%;
   }
-  /* line 58, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-7 {
     flex-basis: 58.33%;
   }
-  /* line 62, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-8 {
     flex-basis: 66.67%;
   }
-  /* line 66, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-9 {
-    flex-basis: 75.00%;
+    flex-basis: 75%;
   }
-  /* line 70, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-10 {
     flex-basis: 83.33%;
   }
-  /* line 74, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-11 {
     flex-basis: 91.67%;
   }
-  /* line 78, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 47, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .col-12 {
     flex-basis: 100%;
   }
-  /* line 82, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 52, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
-  /* line 88, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 56, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .nav-link {
     flex-basis: 100px;
   }
-  /* line 92, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 62, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .btn {
     padding: 10px 30px;
   }
-  /* line 96, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 66, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .btn + .btn {
     margin-left: 10px;
   }
-  /* line 100, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
+  /* line 70, ../../Portfolio/unit-4-project/unit-4-project/scss/components/_media-queries.scss */
   .logo {
     margin-left: initial;
     margin-right: initial;
